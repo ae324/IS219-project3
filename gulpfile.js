@@ -30,7 +30,7 @@ function html() {
 }
 
 function css() {
-    return gulp.src('src/sass/style.scss')
+    return gulp.src('src/scss/style.scss')
         .pipe(gulpIf(!isProd, sourcemaps.init()))
         .pipe(sass({
             includePaths: ['node_modules']

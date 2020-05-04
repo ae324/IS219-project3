@@ -30,7 +30,7 @@ function html() {
 }
 
 function css() {
-    return gulp.src('src/scss/style.scss')
+    return gulp.src('src/sass/style.sass')
         .pipe(gulpIf(!isProd, sourcemaps.init()))
         .pipe(sass({
             includePaths: ['node_modules']
@@ -74,7 +74,7 @@ function staticJsonFile() {
 
 function watchFiles() {
     gulp.watch('src/**/*.html', gulp.series(html, browserSyncReload));
-    gulp.watch('src/**/*.scss', gulp.series(css, browserSyncReload));
+    gulp.watch('src/**/*.sass', gulp.series(css, browserSyncReload));
     gulp.watch('src/**/*.js', gulp.series(js, browserSyncReload));
     gulp.watch('src/img/**/*.*', gulp.series(img));
     gulp.watch('src/projects/**/*.html', gulp.series(html, browserSyncReload));

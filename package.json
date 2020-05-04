@@ -6,7 +6,7 @@
   "homepage": "https://bootstrapstarter.com/bootstrap-templates/template-basic-bootstrap-html/",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ae324/is219_hw3"
+    "url": "https://github.com/ae324/is219_project3"
   },
   "scripts": {
     "start": "gulp",
@@ -14,8 +14,7 @@
     "prod": "cross-env NODE_ENV=prod gulp"
   },
   "devDependencies": {
-    "bootstrap": "^3.4.1",
-    "browser-sync": "^2.26.3",
+    "bootstrap": "^4.4.1",
     "cross-env": "^7.0.2",
     "gulp": "^4.0.2",
     "gulp-clean": "^0.4.0",
@@ -26,9 +25,14 @@
     "gulp-if": "^2.0.2",
     "gulp-imagemin": "^5.0.3",
     "gulp-js-import": "^1.0.6",
+    "gulp-nodemon": "^2.5.0",
     "gulp-sass": "^4.0.2",
     "gulp-sourcemaps": "^2.6.5",
     "gulp-uglify": "^3.0.2"
   },
-  "dependencies": {}
+  "dependencies": {
+    "open": "^7.0.3",
+    "express": "^4.17.1",
+    "mysql": "^2.18.1"
+  }
 }
